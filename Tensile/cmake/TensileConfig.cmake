@@ -176,8 +176,6 @@ function(TensileCreateLibraryFiles
     set(Options ${Options} "--separate-architectures")
   endif()
 
-  set(Options ${Options} "--ignore-asm-cap-cache")
-
   if(Tensile_LAZY_LIBRARY_LOADING)
     set(Options ${Options} "--lazy-library-loading")
   endif()
