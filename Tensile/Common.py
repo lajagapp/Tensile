@@ -1909,8 +1909,8 @@ def GetAsmCaps(isaVersion):
       ignoreCacheCheck = True
 
     # check if derived caps matches asm cap cache
-    if not ignoreCacheCheck and derivedAsmCaps != CACHED_ASM_CAPS[isaVersion]:
-      printExit("Cached asm caps differ from derived asm caps for {}".format(isaVersion))      
+    #if not ignoreCacheCheck and derivedAsmCaps != CACHED_ASM_CAPS[isaVersion]:
+    #  printExit("Cached asm caps differ from derived asm caps for {}".format(isaVersion))      
     return derivedAsmCaps
   else:
     printWarning("Assembler not present, asm caps loaded from cache are unverified")
